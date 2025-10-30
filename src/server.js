@@ -11,12 +11,12 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(compression()); // gzip responses
+app.use(compression()); 
 app.use(express.json({ limit: '10mb' }));
 app.use(require('cors')());
 app.use(require('helmet')());
 app.use(require('morgan')('dev'));
-// Docs
+
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 const PORT = process.env.PORT || 5000;
