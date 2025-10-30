@@ -88,14 +88,16 @@ Dev: nodemon, dotenv
 
 ## THIS IS THE PROJECT STRUCTURE - 
 
+```bash
 src/
-├── config/          # DB and env setup
-├── controllers/     # Business logic (auth, tasks, analytics)
-├── middleware/      # Auth, RBAC, rate limiting
-├── models/          # Mongoose schemas (User, Task)
-├── routes/          # API endpoints
-├── utils/           # Error handling
-└── docs/            # Swagger OpenAPI spec
+├── config/ # DB and env setup
+├── controllers/ # Business logic (auth, tasks, analytics)
+├── middleware/ # Auth, RBAC, rate limiting
+├── models/ # Mongoose schemas (User, Task)
+├── routes/ # API endpoints
+├── utils/ # Error handling
+└── docs/ # Swagger OpenAPI spec
+```
 
 
 ## API Documentation
@@ -146,7 +148,7 @@ Admin :
 5. Validation: All ObjectId fields (e.g., assignedTo) are validated before DB ops
 
 ## Author
-
+```bash
 Milan – Full-Stack Developer @ Chetu India Pvt Ltd
 Specializing in MERN stack and WCAG-compliant accessible web applications
-
+```
