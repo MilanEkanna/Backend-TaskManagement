@@ -35,7 +35,7 @@ const TaskSchema = new mongoose.Schema({
     }
 }, { timestamps: true });
 
-// 👇 Add indexes HERE — after schema, before export
+//  Add indexes HERE — after schema, before export
 TaskSchema.index({ status: 1, dueDate: 1, assignedTo: 1 });
 TaskSchema.index({ createdBy: 1, status: 1 });
 
